@@ -1,0 +1,59 @@
+body {
+  margin: -20px 0px 0px 0px;
+}
+
+.box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-top: 100px;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  height: 30px;
+  margin-top: 20px;
+}
+
+.btn {
+  height: 40px;
+  width: 50%;
+  margin-top: 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.error {
+  color: red;
+  font-size: 20px;
+  position: absolute;
+  right: 40px;
+  top: 60px;
+}
+
+a {
+  margin-top: 40px;
+  width: 100%;
+  text-align: right;
+}
+
+@media only screen and (max-width: 800px) {
+  .form {
+    width: 80%;
+  }
+}

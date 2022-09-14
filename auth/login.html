@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="./login.css" />
+  </head>
+  <body>
+    <div class="box">
+      <form class="form" onsubmit="login(event)">
+        <h1>Login</h1>
+        <p class="error"></p>
+        <input
+          oninput="changeValue(event)"
+          class="input"
+          name="username"
+          required
+          type="email"
+          placeholder="User name"
+        />
+        <input
+          oninput="changeValue(event)"
+          class="input"
+          name="password"
+          required
+          type="password"
+          placeholder="Password"
+        />
+        <button type="submit" class="btn">Login</button>
+        <a href="./register.html">Go to register</a>
+      </form>
+    </div>
+  </body>
+  <script src="./login.js"></script>
+</html>

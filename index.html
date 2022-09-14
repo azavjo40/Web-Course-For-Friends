@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <h1 class="logo">My logo</h1>
+        <a href="./index.html" class="link">Profile</a>
+        <a onclick="logOut()" href="./auth/login.html" class="link">Log out</a>
+      </div>
+      <div class="box">
+        <div class="profile">
+          <div class="box-img">
+            <img class="img" src="./images/user-avatar.png" />
+            <label class="add-image-btn">
+              <input onchange="uploadImage(event)" style="display: none" type="file" />
+              <h1 class="plus">+</h1>
+            </label>
+          </div>
+          <div class="data-user">
+            <h4 class="user-name"></h4>
+            <h4 class="user-email"></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>

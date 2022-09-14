@@ -1,0 +1,112 @@
+body {
+  margin: 0px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  height: 70px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.logo {
+  color: black;
+}
+
+.link:hover {
+  color: #606060;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #a6a4a4;
+}
+
+.profile {
+  display: flex;
+  width: 500px;
+}
+
+.box-img {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  border-radius: 10px 0px 0px 10px;
+  position: relative;
+}
+
+.add-image-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: yellow;
+  position: absolute;
+  top: 75px;
+  right: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.plus {
+  color: black;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.data-user {
+  background-color: white;
+  padding-left: 50px;
+  width: 300px;
+  border-radius: 0px 10px 10px 0px;
+  padding-top: 30px;
+}
+
+.user-name {
+  font-size: 30px;
+  margin: 0px;
+  color: #383838;
+}
+
+.user-email {
+  font-size: 16px;
+  margin: 0px;
+  color: #888888;
+}
+
+@media only screen and (max-width: 500px) {
+  .profile {
+    width: 100%;
+  }
+
+  .box-img {
+    width: 45%;
+  }
+
+  .data-user {
+    width: 55%;
+  }
+}
