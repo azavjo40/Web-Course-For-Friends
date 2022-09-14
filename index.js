@@ -21,7 +21,7 @@ window.onload = async function getProfile() {
         document.getElementsByClassName('user-email')[0].innerHTML = data?.username
     }
 
-    if (await isImg(data?.image)) {
+    if (data?.image && await isImg(data?.image)) {
         urlImage = "/" + data.image
         document.getElementsByClassName('img')[0].src = "https://azam-app-tj-js.herokuapp.com/" + data.image
     }
